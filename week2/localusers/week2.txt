@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "enter the USERNAME :" USERNAME
+read -p "enter the FULL NAME:" NAME
+read -p "enter the PASSWORD :" PASSWORD
+useradd -c "${NAME}" -m ${USERNAME}
+echo ${PASSWORD} | passwd --stdin ${USERNAME}
+passwd -e ${USERNAME}
+echo "USERNAME is ${USERNAME}"
+echo "PASSWORD is ${PASSWORD}"
+echo "HOSTNAME is ${HOSTNAME}"
