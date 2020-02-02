@@ -1,0 +1,3 @@
+please use add2_new_local_user.sh instead of add_new_local_user.sh...
+I had to create a new file because the other one is not opening properly.
+U can try the previous one if it opens.
